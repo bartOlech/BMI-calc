@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class='container'>                                       
+        <div class='main-section'>
+            <h2 class='tittle-text'>Kalkulator BMI</h2>
+            <form class='mainForm'>
+                <label>Podaj swoją wagę</label>
+                <input id='inputWeight' type='text' placeholder='                       kg' required><br>
+                <label>Podaj swój wzrost</label>
+                <input id='inputGrowth' type='text' placeholder='                       cm' required>
+                <label class='selectGender'>Wybierz płeć</label>
+                <div class='genderField'>
+                    <label class="radioCointainer"><b>K</b>
+                        <input id='femaleRadio' type="radio" checked="checked" name='gender' value='female'>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radioCointainer"><b>M</b>
+                        <input id='maleRadio' type="radio" name='gender' value='male'>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <button id='checkButton'>Sprawdź</button>
+            </form>
+            <section class='resultSection'>
+                <h4 class='resultStyle none'>Wynik twojego BMI to :<b id='bmiResult'></b></h4>
+                <p class='obesity none' id='obesity'>Ważysz zdecydowanie za dużo. Postaraj się więcej ruszać oraz lepiej się odżywiać.
+                    Możesz również skonsultować się z dietetykiem w celu zminimalizowania pojawienia się
+                    chorób serca oraz cukrzycy
+                </p>
+                <p class='overWeight none' id='overWeight'>Posiadasz nadwagę. Nadwaga stanowi w XXI w. ogromny problem,
+                    lecz można temu zapobieć. Staraj się odżywiać zdrowiej, możesz również spróbować sił w jakimś sporcie
+                    w którym bedzie wymagany wysiłek fiyzczny
+                </p>
+                <p class='correctWeight none' id='correctWeight'>Posiadasz prawidłową wagę ciała. Tym samym twoje prawdopodobieństwo
+                    pojawienia się u ciebie chorób serca jest dużo mniejasza niż u osoby otyłej
+                </p>
+                <p class='underWeight none' id='underWeight'>Posiadasz niedowage. Pamiętaj, że niedowaga prowadzi
+                    do wielu chorób. Pilnie skontaktuj się ze specjalistą, który podpowie Ci jak unormować twoją
+                    wagę ciała
+                </p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
