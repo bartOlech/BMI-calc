@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://bartOlech.github.io/bmicalc",
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -24,6 +27,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "gh-pages": "^2.0.1",
     "url-parse": "^1.4.3"
   }
 }
